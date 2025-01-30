@@ -1,7 +1,7 @@
 //This is dot env for configuration with require syntex
 //require('dotenv').config({path: "./env"})
 import dotenv from "dotenv"
-
+import { app } from "./app.js"
 import connectDB from "./db/index.js"
 
 //this is connecting db from by importing 

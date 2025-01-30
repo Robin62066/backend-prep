@@ -14,4 +14,12 @@ app.use(express.urlencoded({ extended: true, limit: "16px" }))
 app.use(express.static("public"))
 app.use(cookieParser())
 
+
+//making all Routes
+import userRouter from "./routes/user.routers.js"
+
+//routes decleration
+app.use("/api/v1/users",userRouter) //nich me link hai aisa hi call hoga
+// http://localhost:8000/api/v1/users/register
+
 export {app}
